@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers the whole app on the screen */
+    align-items: center; /* Centers the whole app on the screen, help from gemini */
     padding-top: 50px;
 }
 
@@ -21,7 +21,10 @@ body {
     gap: 12px;
 }
 
-/* THE ALIGNMENT MAGIC: This keeps your 3 boxes in a straight line */
+/* THE ALIGNMENT MAGIC: This keeps your 3 boxes in a straight line 
+* had to get help from gemini
+* prompt: could i get these headers aligned with the inputs?
+*/
 section div > div[data-min] {
     display: flex;
     align-items: center;
@@ -40,12 +43,12 @@ section div > div[data-min] {
 }
 
 .mission-designation {
-    width: 424px; 
+    width: 430px; 
     text-align: left;
 }
 
 .time-label {
-    width: 104px;
+    width: 115px;
     text-align: center;
 }
 
