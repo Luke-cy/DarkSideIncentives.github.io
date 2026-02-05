@@ -1,0 +1,159 @@
+/* body of the page, texts and buttons, inputs */
+
+/* general body styles */
+body {
+    background-color: #0d0d0d;
+    font-style: italic;
+    font-family: "times new roman", Times, serif;
+    font-size: 14px; 
+    color: #848482;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the whole app on the screen */
+    padding-top: 50px;
+}
+
+/* Container for the rows to keep everything centered */
+.site-content > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* THE ALIGNMENT MAGIC: This keeps your 3 boxes in a straight line */
+section div > div[data-min] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-header {
+    display: flex;
+    width: 650px; /* Adjusted to fit all three columns */
+    padding-bottom: 10px;
+    color: #C0C0C0; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 15px;
+}
+
+.mission-designation {
+    width: 424px; 
+    text-align: left;
+}
+
+.time-label {
+    width: 104px;
+    text-align: center;
+}
+
+.priority-label {
+    width: 104px;
+    text-align: center;
+}
+
+/* used gemini here for the glows on the input boxes and buttons 
+* prompt: How would I add a Star Wars lightsaber blue color? Just give me the rgb/hex stuff for css.
+*/
+.catagory-box {
+    background-color: #0a0a0a; /* Pure black for that deep space feel */
+    width: 400px;
+    padding: 12px;
+    border: 1px solid #00D1FF;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 209, 255, 0.2), inset 0 0 2px rgba(0, 209, 255, 0.1);
+}
+
+.catagory-box:hover, .input-box:hover, .priority-box:hover {
+    border-color: #00D1FF;
+    background-color: #111;
+    box-shadow: 0 0 12px rgba(0, 209, 255, 0.5), inset 0 0 8px rgba(0, 209, 255, 0.2);
+}
+
+/* Update your existing input styles with these text-shadows */
+
+/* THE LABELS (The "Questions") */
+input[type="text"].catagory-box {
+    color: #00D1FF; 
+    font-size: 0.85rem;
+    cursor: default;
+    text-shadow: 0 0 5px rgba(0, 209, 255, 0.6); 
+}
+
+/* THE DATA (The numbers you type) */
+input[type="number"] {
+    background: transparent;
+    border: none;
+    color: #ffffff; /* Changed text to white */
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0, 209, 255, 0.9);
+}
+
+/* the input boxes (Number Fields) */
+.input-box {
+    background-color: #0a0a0a;
+    width: 80px; 
+    height: 20px;
+    padding: 12px;
+    border: 1px solid #00D1FF;
+    border-radius: 4px;
+    outline: none; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 209, 255, 0.2), inset 0 0 2px rgba(0, 209, 255, 0.1);
+}
+
+/* the priority boxes */
+.priority-box {
+    background-color: #0a0a0a;
+    width: 80px;
+    height: 20px;
+    padding: 12px;
+    border: 1px solid #00D1FF;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Chrome, Safari, Edge, Opera: Remove the arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* the reecieve judgement button */
+button {
+    background-color: #1a1a1a; /* Dark base for the button */
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 1px solid #FF0000;
+    border-radius: 4px;
+    width: 650px; /* Matched to the table width */
+    cursor: pointer; /* Changed from none so you can actually find it! */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.2), inset 0 0 5px rgba(255, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #000000;
+    color: #FF0000; 
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7), inset 0 0 10px rgba(255, 0, 0, 0.4);
+    border-color: #FF0000;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+}

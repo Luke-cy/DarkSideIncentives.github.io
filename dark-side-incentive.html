@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="dark-side-incentive.css"> 
+
+    <main>
+        <div class="intro-group-0"><p class="intro-text-0">Hello there.</p></div>
+        <div class="intro-group-1">
+            <p class="intro-text-1">I am assuming you aren't General Kenobi,</p>
+            <p class="intro-text-2">but we are glad you are here, regardless.</p>
+        </div>
+        <div class="intro-group-2">
+            <p class="intro-text-3">Keeping the intergalactic peace can be hard,</p>
+            <p class="intro-text-4">managing your time and health can become challenging.</p>
+            <p class="intro-text-5">We made this so the Dark Side doesn't seem too tempting.</p>
+        </div>
+
+<section class="site-content">
+    <div class="content-head"><p>May the Force be with you, Padawan.</p></div>
+
+    <div>
+        <div class="table-header">
+            <span class="mission-designation">MISSION DESIGNATION</span>
+            <span class="time-label">HOURS/WEEK</span>
+            <span class="priority-label">PRIORITY</span>
+        </div>
+
+        <div data-min="49" data-max="63"> 
+            <input class="catagory-box" type="text" value="How much sleep do you usually get?" readonly>
+            <input class="input-box" id="sleep" type="number">
+            <input class="priority-box" id="psleep" type="number" value="1" readonly>
+        </div>
+        
+        <div data-min="0"> 
+            <input class="catagory-box" type="text" value="How much time do you spend in lectures?" readonly>
+            <input class="input-box" id="class" type="number">
+            <input class="priority-box" id="pclass" type="number" placeholder="2-6">
+        </div>
+
+        <div data-min="0"> 
+            <input class="catagory-box" type="text" value="How much school work out of scheduled classtimes?" readonly>
+            <input class="input-box" id="study" type="number">
+            <input class="priority-box" id="pstudy" type="number" placeholder="2-6">    
+        </div>
+
+       <div data-min="0" data-max="24"> 
+            <input class="catagory-box" type="text" value="How much time do you spend working?" readonly>
+            <input class="input-box" id="work" type="number">
+            <input class="priority-box" id="pwork" type="number" placeholder="2-6">    
+        </div>
+        
+        <div data-min="7" data-max="21"> 
+            <input class="catagory-box" type="text" value="How much do you spend on cooking and eating?" readonly>
+            <input class="input-box" id="eat" type="number">
+            <input class="priority-box" id="peat" type="number" placeholder="2-6">
+        </div>
+
+       <div data-min="7" data-max="14"> 
+            <input class="catagory-box" type="text" value="How much time do you spend exercising?" readonly>
+            <input class="input-box" id="exercise" type="number">    
+            <input class="priority-box" id="pexercise" type="number" placeholder="2-5">
+        </div>
+
+        <div data-min="0"> 
+            <input class="catagory-box" type="text" value="Time spent on any other activities?" readonly>
+            <input class="input-box" id="other" type="number">
+            <input class="priority-box" id="pother" type="number" value="7" readonly>
+        </div>
+
+        <button id="submit-btn">Recieve Judgement</button>
+    </div>
+
+    <div id="output">
+      </div>
+
+</section>    </main>
+
+    <p class="fixed-footer">
+        From The Skywalkers to Jordan Kidney 
+        <span class="footer-pun">(all rights reserved to recieve an A+.)</span>
+    </p>
+
+    <script src="functions.js"></script>
