@@ -41,7 +41,7 @@ function getHoursFromUI() {
 
     
    let total = 0
-   for(let i = 0; i > 7; i++ ){
+   for(let i = 0; i < 7; i++ ){
     total+=hours[i];
    }
    if(total <= 0){
